@@ -9,7 +9,7 @@
 
 namespace lithium\tests\mocks\util;
 
-class MockCollectionObject extends \lithium\core\Object {
+class MockCollectionObject extends \lithium\core\BaseObject {
 
 	public $data = [1 => 2];
 

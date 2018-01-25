@@ -51,7 +51,7 @@ namespace lithium\net\http;
  * @see lithium\net\http\Route::compile()
  * @see lithium\net\http\Router
  */
-class Route extends \lithium\core\Object {
+class Route extends \lithium\core\BaseObject {
 
 	/**
 	 * The URL template string that the route matches, i.e.

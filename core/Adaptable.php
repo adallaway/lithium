@@ -209,10 +209,10 @@ class Adaptable extends \lithium\core\StaticObject {
 	/**
 	 * Provides an extension point for modifying how adapters are instantiated.
 	 *
-	 * @see lithium\core\Object::__construct()
+	 * @see lithium\core\BaseObject::__construct()
 	 * @param string $class The fully-namespaced class name of the adapter to instantiate.
 	 * @param array $config The configuration array to be passed to the adapter instance. See the
-	 *              `$config` parameter of `Object::__construct()`.
+	 *              `$config` parameter of `BaseObject::__construct()`.
 	 * @return object The adapter's class.
 	 * @filter
 	 */

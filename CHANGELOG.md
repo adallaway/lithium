@@ -57,7 +57,7 @@
   `lithium\aop` namespace.
 
   **Shallow hirarchy.** With the new `Filters`, classes that need filter functionality
-  don't need to inherit from `Object`/`StaticObject` anymore and don't need to have
+  don't need to inherit from `BaseObject`/`StaticObject` anymore and don't need to have
   special methods or properties defined. This is possible by entirely relying on a central
   filters manager and using `spl_object_hash()` internally.
 
@@ -319,7 +319,7 @@
   of `lithium\aop\Filters`.There have also been changes in how filters should
   be implemented and advanced. **Everything old keeps on working** and calls are
   forwarded to the new implementations. Methods for filtering functionality in
-  `Object`/`StaticObject` have also been deprecated.
+  `BaseObject`/`StaticObject` have also been deprecated.
 
   | old | new |
   | --- | --- |

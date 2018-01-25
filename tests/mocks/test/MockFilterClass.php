@@ -9,7 +9,7 @@
 
 namespace lithium\tests\mocks\test;
 
-class MockFilterClass extends \lithium\core\Object {
+class MockFilterClass extends \lithium\core\BaseObject {
 	public function __construct($all = false) {
 		if ($all) {
 			return true;

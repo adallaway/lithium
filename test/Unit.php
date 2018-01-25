@@ -38,7 +38,7 @@ use RecursiveIteratorIterator;
  *
  * @see lithium\test\Unit::assertException()
  */
-class Unit extends \lithium\core\Object {
+class Unit extends \lithium\core\BaseObject {
 
 	/**
 	 * The Reference to a test reporter class.

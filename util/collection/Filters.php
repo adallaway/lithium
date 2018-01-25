@@ -22,7 +22,7 @@ use lithium\aop\Filters as NewFilters;
  * centralized publish/subscribe system.
  *
  * In Lithium itself, when creating a method that can be filtered, a method is implemented as
- * a closure and is passed to either `Object::_filter()` or `StaticObject::_filter()`. Each
+ * a closure and is passed to either `BaseObject::_filter()` or `StaticObject::_filter()`. Each
  * object internally maintains its own list of filters, which are applied in these methods and
  * passed to `Filters::run()`.
  *
@@ -75,9 +75,9 @@ use lithium\aop\Filters as NewFilters;
  * @deprecated Replaced by `\lithium\aop\Filters` and `\lithium\aop\Chain`.
  * @link http://php.net/functions.anonymous.php
  * @see lithium\util\collection\Filters::run()
- * @see lithium\core\Object::_filter()
+ * @see lithium\core\BaseObject::_filter()
  * @see lithium\core\StaticObject::_filter()
- * @see lithium\core\Object::applyFilter()
+ * @see lithium\core\BaseObject::applyFilter()
  * @see lithium\core\StaticObject::applyFilter()
  */
 class Filters extends \lithium\util\Collection {
@@ -207,8 +207,8 @@ class Filters extends \lithium\util\Collection {
 	 * Provides short-hand convenience syntax for filter chaining.
 	 *
 	 * @deprecated Not used here anymore.
-	 * @see lithium\core\Object::applyFilter()
-	 * @see lithium\core\Object::_filter()
+	 * @see lithium\core\BaseObject::applyFilter()
+	 * @see lithium\core\BaseObject::_filter()
 	 * @param object $self The object instance that owns the filtered method.
 	 * @param array $params An associative array containing the parameters passed to the filtered
 	 *              method.

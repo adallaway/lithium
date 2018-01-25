@@ -28,7 +28,7 @@ use InvalidArgumentException;
  * @see lithium\data\Model
  * @see lithium\data\Source
  */
-class Query extends \lithium\core\Object {
+class Query extends \lithium\core\BaseObject {
 
 	/**
 	 * Array containing mappings of relationship and field names, which allow database results to

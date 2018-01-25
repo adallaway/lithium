@@ -15,9 +15,9 @@ use lithium\analysis\Inspector;
 
 /**
  * Provides a base class for all static classes in the Lithium framework. Similar to its
- * counterpart, the `Object` class, `StaticObject` defines some utility useful for testing purposes.
+ * counterpart, the `BaseObject` class, `StaticObject` defines some utility useful for testing purposes.
  *
- * @see lithium\core\Object
+ * @see lithium\core\BaseObject
  */
 class StaticObject {
 
